@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<style>
+        .menu-img {
+            max-width: 500px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-{{ hotdog }}
+    <h2>{{ hotdog.name }}</h2>
+    <p>Price: {{ hotdog.price }}</p>
+    <p>Composition: {{ hotdog.composition }}</p>
+    <img src="{{hotdog.cover.url}}" class="menu-img img-fluid" alt="">
 </body>
 </html>
